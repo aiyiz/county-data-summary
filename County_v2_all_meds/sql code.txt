@@ -1,0 +1,4 @@
+#select count(*),concat(concat(county,', '),state_code) county_state from etl.public.transactions group by  concat(concat(county,', '),state_code); 
+
+
+#select count(*),concat(concat(county,', '),state_code) county_state from etl.public.transactions where event_type = 'click' group by  concat(concat(county,', '),state_code); 
